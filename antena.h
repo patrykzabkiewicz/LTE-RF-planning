@@ -11,6 +11,7 @@ struct Antena {
 	vect angle;
 	vect height;
 	vect * anglePropagation;
+	void move(vect x, vect y) {}
 };
 
 struct Site {
