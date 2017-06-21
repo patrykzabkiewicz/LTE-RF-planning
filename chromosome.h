@@ -1,14 +1,15 @@
 #ifndef CHROMOSOME_H_ 
 #define CHROMOSOME_H_
 
-#include <vector>
+struct Chromosome {
+	vect value;	// overall goal function value
+	vect product; // tensor product
+	vect * similarity_map;	// similarity memory bit-map
+	vect * genes;
+	vect * weights;
+	vect * error;
+	vect * 
 
-class Chromosome {
-	int value;	// overall goal function value
-	int * map;	// similarity memory bit-map
-	vector<int> * geneList;
-	
-public:
 	Chromosome();
 	Chromosome(Chromosome &B);
 	virtual void ~Chromosome();

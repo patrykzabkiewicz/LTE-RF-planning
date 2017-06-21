@@ -6,7 +6,12 @@
 
 class Population {
 	list<Chromosome> * chromosomeList;
+	list<int> * sortedList;
+	void sort();
 public:
+	Population();
+	Population(Population &P);
+	virtual void ~Population();
 	void cross();
 	void mutation();
 };
