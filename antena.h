@@ -8,10 +8,16 @@
 struct Antena {
 	vect x;
 	vect y;
-	vect angle;
+	vect directionAngle; 	// facing of the antena
 	vect height;
 	vect * anglePropagation;
-	void move(vect x, vect y) {}
+	int anglePropagationCount;
+	int signalStrenght;
+	int 
+
+	void move(vect x, vect y);
+	void calculatePropagation();	// calculate signal strenght
+
 };
 
 struct Site {

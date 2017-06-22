@@ -4,11 +4,13 @@
 struct Chromosome {
 	vect value;	// overall goal function value
 	vect product; // tensor product
+
+	int genes_count;
 	vect * similarity_map;	// similarity memory bit-map
 	vect * genes;
 	vect * weights;
 	vect * error;
-	vect * 
+	vect * tensor;
 
 	Chromosome();
 	Chromosome(Chromosome &B);
