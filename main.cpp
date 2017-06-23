@@ -12,6 +12,7 @@
  */
 
 #include <iostream>
+#include <stdlib.h> 
 
 #include "population.h"
 
@@ -22,11 +23,15 @@ using namespace std;
 
 int main(int argc, char * argv[]) {
 
+    int generateMapFlag = 0;
+
     // read arguments
     if(argc > 1) {
-
+        generateMapFlag = atoi(argv[1]);
+        
     } else {
-        cout << "" << endl;
+        cout << "usage: " << argv[0] << " generateMapFlag " << endl;
+        return 0; // exit
     }
 
     // load map

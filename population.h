@@ -4,6 +4,7 @@
 #include <list>
 #include "chromosome.h"
 
+/* population of the new */
 class Population {
 	list<Chromosome> * chromosomeList;
 	list<int> * sortedList;

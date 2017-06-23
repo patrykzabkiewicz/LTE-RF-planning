@@ -1,6 +1,7 @@
 #ifndef CHROMOSOME_H_ 
 #define CHROMOSOME_H_
 
+/* chromosome virtualization */
 struct Chromosome {
 	vect value;	// overall goal function value
 	vect product; // tensor product
